@@ -1575,65 +1575,56 @@ html[data-theme='dark'] .theme-toggle .fa-sun {
 }
 
 /* =========================================
-   FIX MOBILE RESPONSIVE
+   FIX MOBILE - CENTRAGE FORCE
    ========================================= */
 
+/* 1. Empêche tout dépassement horizontal (le vide blanc à droite) */
+html, body {
+  overflow-x: hidden !important;
+  width: 100% !important;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
 @media (max-width: 768px) {
-  /* 1. Corrige le décalage vers la droite */
+  /* 2. Annule le décalage de 72px qui casse tout */
   .hero-content div {
+    margin-left: 0 !important; /* C'est la ligne la plus importante */
+    margin-right: 0 !important;
+    width: 100% !important;
+    padding: 0 !important;
+    text-align: center !important;
+    justify-content: center !important;
+  }
+
+  /* 3. Centre le gros titre et réduit sa taille */
+  .hero-content h1 {
+    font-size: 2rem !important;
+    text-align: center !important;
     margin-left: 0 !important;
     width: 100%;
-    padding: 0 10px;
   }
 
-  /* 2. Ajuste la taille du gros titre */
-  .hero-content h1 {
-    font-size: 2rem !important; /* Plus petit pour mobile */
-    line-height: 1.3;
-    margin-bottom: 15px;
-  }
-
-  /* 3. Ajuste la taille du texte "Typewriter" */
-  .typewriter {
-    font-size: 1.2rem !important;
-    min-height: 1.5em; /* Évite le saut de ligne quand ça change */
-  }
-
-  /* 4. Réorganise les boutons */
+  /* 4. Force les boutons à être centrés */
   .hero-btns {
-    flex-direction: column; /* Les boutons l'un sur l'autre */
-    width: 100%;
-    gap: 15px !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    width: 100% !important;
+    margin: 20px 0 !important; /* Un peu d'espace en haut/bas */
   }
 
+  /* 5. Ajuste la largeur des boutons pour qu'ils soient beaux */
   .hero-btns .btn {
-    width: 100%; /* Boutons pleine largeur */
-    margin-top: 10px !important; /* Espacement propre */
-    display: block;
+    width: 80% !important; /* Pas trop larges, juste ce qu'il faut */
+    max-width: 300px;
+    margin: 5px auto !important; /* Auto permet de centrer le bloc */
   }
 
-  /* 5. Ajuste la section Hero globale */
-  .hero {
-    height: auto !important; /* Laisse la hauteur s'adapter au contenu */
-    min-height: 100vh;
-    padding-top: 120px; /* Espace pour ne pas être caché par le menu */
-    padding-bottom: 50px;
-    background-attachment: scroll; /* Fixe le bug de fond sur iPhone */
-  }
-
-  /* 6. Corrige le menu hamburger */
-  .menu {
-    background-color: var(--bg-color) !important; /* Assure que le menu a une couleur de fond */
-    width: 100%;
-    top: 80px; /* Ajuste selon la hauteur de ton header */
-    padding-bottom: 30px;
-    box-shadow: 0 10px 10px rgba(0,0,0,0.1);
-  }
-  
-  /* Assure que le texte du menu est visible en mode sombre/clair */
-  .menu a {
-     font-size: 1.2rem;
-     padding: 10px 0;
-     display: block;
+  /* 6. Centre les icônes sociales */
+  .hero-social {
+    justify-content: center !important;
+    margin-top: 20px !important;
+    margin-left: 0 !important;
   }
 }
