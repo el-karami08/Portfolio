@@ -1582,7 +1582,7 @@ html[data-theme='dark'] .theme-toggle .fa-sun {
 html, body {
   overflow-x: hidden !important;
   width: 100% !important;
-  margin: 0 !important;
+  margin: 0px 5px 0px 5px !important;
   padding: 0 !important;
 }
 
