@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>EL KARAMI Wijdane </title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
+  <!-- Add Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap">
+  <link rel="icon" type="image/png" href="/Media/Logos/2.png">
+  <meta property="og:title" content="Wijdane EL KARAMI - AI Researcher & Data Scientist Portfolio">
+  <meta property="og:description" content="Master's Student in Advanced Machine Learning. Explore my projects in RL, LLMs, and Computer Vision.">
+  <meta property="og:image" content="Media/Wijou2.jpg"> <meta property="og:url" content="https://el-karami08.github.io/Portfolio/">
+</head>
+<body>
+  <div id="root"></div>
+  <div id="particles-js"></div>
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script type="module" src="main.tsx"></script>
+  <!-- INTRO VIDEO CONTAINER -->
+  <div id="intro-video-container">
+    <video id="intro-video" autoplay muted playsinline>
+      <source src="Media/White_Vid_Logo.mp4" type="video/mp4">
+      Ton navigateur ne supporte pas la vidéo HTML5.
+    </video>
+  </div>
+  <!-- Navigation with theme toggle -->
+  <header>
+    <div class="container">
+      <a href="#" class="logo" id="logo-link">
+        <img src="Media/Logos/1.png" alt="Wijdane's logo" class="logo-img" />
+      </a>           
+      <nav>
+        <ul class="menu">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#education">Education</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+          <li class="theme-switch-wrapper">
+            <button id="theme-toggle" class="theme-toggle">
+              <i class="fas fa-sun"></i>
+              <i class="fas fa-moon"></i>
+            </button>
+          </li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+      <div class="container">
+        <div class="hero-content">
+          <h1>Hello, I'm <span class="highlight">EL KARAMI WIJDANE </span></h1>
+          <h2 class="typewriter">
+            <span id="profession"></span>
+            <span class="cursor"></span>
+          </h2>
+          <p>Building digital experiences that make an impact</p>
+          <div class="hero-btns" style="display: flex; gap: 15px; justify-content: center; align-items: center;">
+            <a href="#contact" class="btn">Get In Touch</a>
+            <a href="Media/CV_EL_KARAMI_Wijdane.pdf" class="btn" download style="background-color: var(--secondary-color);">
+              <i class="fas fa-download"></i> Download CV
+            </a>
+          </div>
+          <div class="hero-social">
+            <a href="https://github.com/el-karami08" target="_blank" class="social-link">
+              <i class="fab fa-github"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/wijdane-el-karami-9567652a5" target="_blank" class="social-link">
+              <i class="fab fa-linkedin"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" class="social-link">
+              <i class="fab fa-twitter"></i>
+            </a>       
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+      <div class="container">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-content">
+          <div class="about-img">
+            <div class="img-container">
+              <!-- Replace with your image -->
+              <img src="Media/Wijou4.jpg" alt="Profile Photo">
+            </div>
+          </div>
+          <div class="about-text">
+            <p>As a Master's student in Advanced Machine Learning and Multimedia Intelligence, 
+              I am dedicated to advancing the boundaries of Artificial Intelligence and Machine Learning.</p>
+            <p>My academic and research endeavors have equipped me with a strong foundation in algorithm development, data analysis, and multimedia processing.
+              I am passionate about leveraging cutting-edge technologies to solve complex problems and drive innovation.</p>
+            <p>With a keen interest in the transformative potential of AI, 
+              I am committed to contributing to impactful projects and collaborating with professionals
+              who share a vision for shaping the future of intelligent systems.</p>
+            <div class="about-details">
+              <div class="detail">
+                <span class="label">Name:</span>
+                <span class="value">EL KARAMI Wijdane</span>
+              </div>
+              <div class="detail">
+                <span class="label">Email:</span>
+                <span class="value">wijdan.elkarami@gmail.com</span>
+              </div>
+              <div class="detail">
+                <span class="label">Location:</span>
+                <span class="value">Morocco, Sefrou</span>
+              </div>
+              <div class="detail">
+                <span class="label">Availability:</span>
+                <span class="value">Open to opportunities</span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="about-stats">
+            <div class="stat">
+              <h3>15+</h3>
+              <p>Projects Completed</p>
+            </div>
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Years Experience</p>
+            </div>
+            <div class="stat">
+              <h3>15+</h3>
+              <p>Technologies Mastered</p>
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Education</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Master's in Advanced Machine Learning and Multimedia Intelligence</h3>
+              <h4>Faculty of Sciences Dhar EL Mahraz</h4>
+              <p class="timeline-date">2024 - 2026</p>
+              <p>Focused on cutting-edge technologies in machine learning, deep learning, data science, artificial intelligence and multimedia processing.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Bachelor's in Mathematical and computer sciences</h3>
+              <h4>Faculty of Sciences Dhar EL Mahraz</h4>
+              <p class="timeline-date">2023 - 2024</p>
+              <p>Graduated with honors. Focused on software development and web programming. Led multiple team projects in application development.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>DEUG (Diploma of General University Studies) in Mathematical and computer sciences</h3>
+              <h4>Faculty of Sciences Dhar EL Mahraz</h4>
+              <p class="timeline-date">2021 - 2023</p>
+              <p>Graduated with honors. Focused on core computer science subjects such as programming, data structures, and algorithms. Specialized in software development and web programming, with hands-on experience leading multiple team projects in application design and development.</p>
+            </div>
+          </div>
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Baccalaureat on physic sciences</h3>
+              <h4>Le jasmin pravite school</h4>
+              <p class="timeline-date">2020 - 2021</p>
+              <p>Bac on physics sciences with strong knowledge on mathematics (Algebra , Analyse) , Physics and chimical , Life and Earth Sciences , philosophy and languages (English , Frensh) </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Skills Grid Container, will be populated by JavaScript -->
+    <section id="skills" class="section">
+      <div id="skills-container" class="skills-grid-container"></div>
+    </section>
+
+    <!-- Projects Section -->
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+      <div class="container">
+        <h2 class="section-title">Featured Projects</h2>
+        <div class="projects-grid"></div>
+      </div>
+    </section>
+
+    <!-- Experience Section -->
+   <section id="experience" class="section">
+      <div class="container">
+        <h2 class="section-title">Work Experience</h2>
+        <div class="timeline">
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>AI Engineer Intern</h3>
+              <h4>Logi Sakan</h4>
+              <p class="timeline-date">07/2025 - 09/2025</p>
+              <p><strong>Technologies:</strong> Python, Scikit-learn, Pandas, NumPy, Flask</p>
+              <ul>
+                <li>Designed and implemented a Content-Based Recommendation System using Cosine Similarity and KNN algorithms to match users with relevant property listings.</li>
+                <li>Conducted extensive Feature Engineering on heterogeneous real-estate data (categorical attributes, price normalization), improving the matching model's precision.</li>
+                <li>Integrated the inference engine into a web prototype to demonstrate real-time recommendation capabilities and validate user engagement metrics.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <h3>Mobile Application Developer (Intern)</h3>
+              <h4>Faculty of Sciences Dhar El Mahraz</h4>
+              <p class="timeline-date">02/2024 - 05/2024</p>
+              <p>Developed an Android application focused on tourism in Fes Medina. Collaborated to provide a distinctive experience for tourists through monument and garden mapping. Gained experience in version control and project management.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section bg-light">
+      <div class="container">
+        <h2 class="section-title">Contact Me</h2>
+        <div class="contact-container">
+          <div class="contact-info">
+            <h3>Get In Touch</h3>
+            <p>Feel free to reach out to me for any inquiries, collaborations, or just to say hello!</p>
+            <div class="contact-details">
+              <div class="contact-item">
+                <div class="contact-icon">📧</div>
+                <div class="contact-text">
+                  <h4>Email</h4>
+                  <p>wijdan.elkarami@gmail.com</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📱</div>
+                <div class="contact-text">
+                  <h4>Phone</h4>
+                  <p>+212707845069</p>
+                </div>
+              </div>
+              <div class="contact-item">
+                <div class="contact-icon">📍</div>
+                <div class="contact-text">
+                  <h4>Location</h4>
+                  <p>Sefrou, Morocco</p>
+                </div>
+              </div>
+            </div>
+            <div class="social-links">
+                        <a href="https://github.com/el-karami08" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/wijdane-el-karami-9567652a5" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                        <a href="https://twitter.com" target="_blank" class="social-link">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="mailto:wijdan.elkarami@gmail.com" class="social-link">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div> 
+          </div>
+          <div class="contact-form">
+            <form id="contactForm">
+              <div class="form-group">
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+              <div class="form-group">
+                <label for="subject">Subject</label>
+                <input type="text" id="subject" name="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="message">Message</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+              </div>
+              <button type="submit" class="btn btn-submit">Send Message</button>
+              <div style="margin-top: 20px; text-align: center;">
+                <p>Or download my full resume here:</p>
+                <a href="Media/CV_Wijdane_EL_KARAMI.pdf" class="btn" download style="width: 100%; background-color: #333;">
+                  <i class="fas fa-file-pdf"></i> Download Resume (PDF)
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="footer-content">
+        <p>&copy; 2025 EL KARAMI WIJDANE . All Rights Reserved.</p>
+        <div class="footer-links">
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#projects">Projects</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("ANz5z1YcJW1bWjcq7"); // Remplace par ta clé publique
+    })();
+  </script>
+  <script src="Script.js"></script>
+  <script src="Script.js"></script>
+</body>
+
+</html>
