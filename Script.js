@@ -104,11 +104,10 @@ document.addEventListener('DOMContentLoaded', function() {
   const themeToggle = document.getElementById('theme-toggle');
   
   // Check for saved theme preference or use the system preference
-  const savedTheme = localStorage.getItem('theme') || 
-    (window.matchMedia('(prefers-color-scheme: dark)').matches ? 'dark' : 'light');
-  
-  // Apply saved theme on page load
-  document.documentElement.setAttribute('data-theme', savedTheme);
+const savedTheme = localStorage.getItem('theme') || 'light';
+
+// Applique le thème au chargement
+document.documentElement.setAttribute('data-theme', savedTheme);
   
   // Theme toggle click handler
   if (themeToggle) {
