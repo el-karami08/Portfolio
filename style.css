@@ -1580,7 +1580,7 @@ html[data-theme='dark'] .theme-toggle .fa-sun {
 
 /* 1. Empêche tout dépassement horizontal */
 html, body {
-  
+  overflow-x: hidden !important;
   width: 100% !important;
   margin: 0px 10px 0px 10px !important;
   padding: 0 !important;
@@ -1592,15 +1592,8 @@ html, body {
     display: flex;
     flex-direction: column;
     align-items: center;   /* centre horizontalement */
-    justify-content: flex-start;
+    justify-content: center;
     text-align: center;
-  }
-
-  .hero-content div {
-    margin: 0 !important;
-    width: 100% !important;
-    padding: 0 !important;
-    text-align: center !important;
   }
 
   .hero-content h1 { 
@@ -1619,10 +1612,10 @@ html, body {
   .hero-btns .btn { 
     width: 90% !important; 
     /* occupe presque toute la largeur */ 
-    max-width: 250px; 
+    max-width: 150px; 
     /* limite pour éviter qu’ils soient trop grands */ 
     font-size: 0.9rem !important; 
-    padding: 10px 15px !important; 
+    padding: 10px 10px !important; 
   } 
   /* Icônes sociales */ 
   .hero-social a { 
@@ -1636,17 +1629,9 @@ html, body {
     display: flex !important;
     flex-direction: column !important;
     align-items: center !important;
+    justify-content: center;
     width: 100% !important;
     margin: 20px 0 !important;
-  }
-
-  /* Sections générales */
-  .section, .container {
-    width: 100% !important;
-    max-width: 100% !important;
-    margin: 0 auto !important;
-    padding: 0 10px !important;
-    text-align: center !important;
   }
 }
 
