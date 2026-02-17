@@ -1690,4 +1690,61 @@ html, body {
   .container {
     padding: 0 20px !important;
   }
+
+
+  
+  /* Photo et texte empilés */
+  .about-content {
+    flex-direction: column !important;
+    gap: 30px !important;
+    width: 100% !important;
+  }
+
+  .about-img, .about-text {
+    min-width: 0 !important;
+    width: 100% !important;
+    flex: none !important;
+    margin: 0 !important;
+  }
+
+  /* Photo plus petite */
+  .img-container {
+    max-width: 250px !important;
+    margin: 0 auto !important;
+  }
+
+  /* Texte centré */
+  .about-text {
+    padding: 20px 15px !important;
+    text-align: center !important;
+  }
+
+  /* Détails empilés */
+  .about-details {
+    grid-template-columns: 1fr !important;
+    gap: 15px !important;
+    text-align: center !important;
+  }
+  
+  .detail {
+    align-items: center !important;
+    width: 100% !important;
+  }
+
+  /* Stats (15+, 2+...) empilées */
+  .about-stats {
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    gap: 15px !important;
+    width: 100% !important;
+    margin-top: 30px !important;
+  }
+
+  .stat {
+    width: 80% !important;
+    max-width: 300px !important;
+    margin: 0 auto !important;
+    padding: 1.5rem !important;
+  }
 }
